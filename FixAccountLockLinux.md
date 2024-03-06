@@ -15,7 +15,7 @@ This problem is related to the change of the drive. If it is not properly reflec
       ```
 
    3. Open the `[mountpoint]/etc/fstab` in text editor, and remove lines of the detacted devices
-   4. mount -o remount,rw /
+   4. Next step 'mount -o remount,rw /'
    5. Save and reboot, and remove the bootdisk.
 
 Done.
