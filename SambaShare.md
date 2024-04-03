@@ -38,14 +38,16 @@
      ```
      groupadd samba
      ```
-     gpasswd -a bara samba
-     ```
-  10. Create a shared folder that you have specified in the smb.conf file
+  10. Create password for samba user
+      ```
+      gpasswd -a bara samba
+      ```
+  12. Create a shared folder that you have specified in the smb.conf file
       ```
       mkdir -p /data/private
       ```
-  11. Provide read and write permissions to the Samba share
+  13. Provide read and write permissions to the Samba share
       ```
       setfacl -R -m "g:samba:rwx" /data/private
       ```
-  12. Finish, To connect to samba server using [ip_server]
+  14. Finish, To connect to samba server using [ip_server]
