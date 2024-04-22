@@ -10,6 +10,8 @@
   4. Start samba
      ```
      systemctl start smbd nmbd
+     ```
+     ```
      systemctl enable smbd nmbd
      ```
   5. Edit samba configuration
@@ -46,8 +48,12 @@
       ```
       mkdir -p /data/private
       ```
-  13. Provide read and write permissions to the Samba share
+  13. Install acl
+      ```
+      apt install acl -y
+      ```
+  14. Provide read and write permissions to the Samba share
       ```
       setfacl -R -m "g:samba:rwx" /data/private
       ```
-  14. Finish, To connect to samba server using [ip_server]
+  15. Finish, To connect to samba server using [ip_server]
