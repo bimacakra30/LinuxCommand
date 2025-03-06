@@ -1,2 +1,1 @@
-# LinuxCommand
-# Troubleshooting for linux
+# HEHEHEHEHEHE
